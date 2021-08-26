@@ -5,25 +5,23 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class Romtalltest {
+    StringBuilder romannumb = new StringBuilder();
 
+
+
+
+     private String toRoman(int numb) {
+
+        for (int i = 0; i < numb; i++) {
+
+        }
+      return  romannumb.append("I").toString();
+    }
 
     @Test
     void shouldConvert1ToI() {
-        assertEquals("1", toRoman(1));
+        assertEquals("I", toRoman(1));
     }
-
-    static private String toRoman(int i) {
-        if (i == 1) {
-            return "I";
-        }
-        if (i == 2) {
-            return "II";
-
-        } {
-            return "III";
-        }
-    }
-
         @Test
         void shouldConvert2ToII () {
             assertEquals("II", toRoman(2));
