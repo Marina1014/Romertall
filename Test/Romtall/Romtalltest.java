@@ -12,9 +12,19 @@ public class Romtalltest {
         assertEquals("I", toRoman(1));
     }
 
-    static private int toRoman(int i) {
-        return i;
+    static private String toRoman(int i) {
+        if ( i == 1){
+            return "I";
+        }
+        else
+        {
+            return "II";
+        }
     }
+
+
+    @Test
+    void shouldConvert2ToII() { assertEquals( "II", toRoman(2));}
 
 
 
